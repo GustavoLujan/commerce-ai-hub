@@ -30,7 +30,7 @@ jobs:
       - name: Build
         working-directory: frontend
         env:
-          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+          VITE_API_URL: https://commerce-ai-hub.onrender.com
         run: npm run build
 
       - name: Deploy to gh-pages branch
